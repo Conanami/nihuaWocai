@@ -1,0 +1,22 @@
+/* pages/shouquan/shouquan.wxss */
+.slogan
+{
+  height: 120rpx;
+  text-align: center;
+  line-height: 120rpx;
+  margin: 30rpx;
+  font-size: 50rpx;
+}
+.btn
+{
+  height: 80rpx;
+  width:80%;
+  margin: 10%;
+  background-color: orange;
+  text-align: center;
+  line-height: 80rpx;
+  color: white;
+  font-size: 40rpx;
+  box-shadow: 5rpx 5rpx 25rpx #ccc;
+  border-radius: 16rpx;
+}

@@ -1,0 +1,12 @@
+<!--pages/share/share.wxml-->
+
+<view class="works">
+  <view>作品题目《{{p_name}}》</view>
+  <image src="{{imgurl}}" />
+</view>
+<view class="button">
+  <!-- 发送给朋友 -->
+  <button open-type="share">邀请朋友来猜</button>
+  <!-- 分享到朋友圈 -->
+  <button bindtap="download">保存到画册</button>
+</view>

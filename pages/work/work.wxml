@@ -1,0 +1,61 @@
+<!--pages/work/work.wxml-->
+<view class="container">
+  <!-- 作者区域 -->
+  <view class="author">
+    <view class="authorImg">
+      <image class="image" src="{{userdata.headImg}}"></image>
+    </view>
+    <view class="authorInfo">
+      <view class="authorName">
+        作者：{{userdata.nickName}}
+      </view>
+      <view class="tip">
+        提示：{{projectdata.notice}}
+      </view>
+    </view>
+    
+  </view>
+  <!-- 作品区域 -->
+  <view class="works">
+    <image src="{{webUrl}}/upload/works/{{workdata.img}}"></image>
+  </view>
+  <!-- 答题区域 -->
+  <view class="answer">
+    <block wx:if="{{isLook}}">
+      <!-- 提示区域 -->
+      <view class="rightanswer">
+        正确答案：{{projectdata.name}}
+      </view>
+    </block>
+    <block wx:else>
+      <!-- 回答区域 -->
+      <view class="answer_area">
+        <input bindinput="shuru"  class="input" placeholder="请输入答案"></input>
+        <button class="btn" bindtap="answer">回答</button>
+      </view>
+    </block>
+  </view>
+  <!-- 答题列表 -->
+  <view class="list">
+    <view class="author" wx:for="{{answerlist}}">
+      <view class="authorImg">
+        <image class="image" src="{{item.headImg}}"></image>
+      </view>
+      <view class="authorInfo">
+        <view class="authorName">
+          {{item.nickName}} {{item.time}}
+        </view>
+        <view class="tip">
+          
+          <block wx:if="{{item.isOk}}">
+            回答正确
+          </block>
+          <block wx:else>
+            错误答案：{{item.text}}
+          </block>
+        </view>
+      </view>
+    
+    </view>
+  </view>
+</view>

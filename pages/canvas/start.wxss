@@ -1,0 +1,263 @@
+/* pages/canvas/start.wxss */
+/* iconfont自动下载的代码 */
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1584405796268'); /* IE9 */
+  src: url('iconfont.eot?t=1584405796268#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAWMAAsAAAAAClAAAAU9AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDSAqHRIYoATYCJAMYCw4ABCAFhG0HVRvbCCOSD06C7B+JMTi2zlxzT4satanyKm1LOxLf5PPRpv3ZWSS7EV6CxIW6EjWB1qGiVM2Qnhk5dxoggCDv4nScbxEmQu1J7PXXt1369rOMp8FplEJIhOTgcvzLmmDz7K0c/r+xlo1pU8MAowkU0BjbFmUBl1iqqTZML2EgP+8HAoCDJyUSHhmfDjFYODoCc+prqkogLtnB9vAJxCZhy1zWhqyCAGJmKfMUwMr48+QbjE0MMBBQOAclV0aUY7ZFOuxG1Va1fPrC6vW8ANgigAJQAliA9Lf6O0HTpBIFZ3wDi1gAthCDAWuRWjwtsy3Nw25WKyW1EyawdfVYy89AsMOPJwTW20IiPiUALFKfBApYPEkggGU2CQxgaSZBAAy7Ke+RWbhiH0cgIwGyDA5LSc+464ggIHZODtIIqa2jh42cuBNbUFhle7rZnGU0ZhjgbbUmU95Vg49ats0QfHW88bMssynTZOrT75eWr9soy1h/QFG1YXOJyZSpObAPw+lJTErBSXlaPTGZZhoM0tG+GlNmjEy/dOYug/KgAeq9+8kec9gJs69+y4F9skNGlztmorkSMNm/ZY9nXfMsu7Z6XQ9XWszpXUV7zFEOukvXjkG4UVpZItJs5uy1GyEsq0rndvhtdFZyWfy6dP+Z6WfGpXPu69brNri58dKNGw/u1e7frHEbt+XEFV53aJtzqnads5RXbNEn7j3qnL5RvUkmk3KZ6VwenzHxruukdVMuGZVKO92lY9ucszc+5WzPv/akcgXhs7ZcKOZ5HRg1x2kJ1WSkKGnHE511aB7d8847ewINpRQsQnXFibPVT89GL4KrhR/6dH/POlbJ459Kvl6s8lLW16hiyY2I6JiI68zYlDcbNQe+atugWKxWL11d0/pVrRjWgYfMX5/TCw4rtjswuz54cJpxKUyl93fYvsKBXvjrs8/n8d9zzN6ce//ReP/qcV9bJf4nmsUtWvrht9O6qSLFXume6uPhrBo9+K+x8UjyUimSB9331bUu/j8walta6pEsmTigLKj7tEtszXaGP5NTuri2/SP2Hv8dJt9US/re9r0MuupTgdlzJP2KXbBRVPhc1frPOWMvOSnpl9yUSGMvTelLuKcap9t0OFTldm+CyKFa2TzOsRk3rpZk3JipsOudXT9zVvi+Jf+EXjnnku1QrymRuxnSVt4SRc+d5TRrjM2R6D2Djqpat/u/SWRJVB+ij8uLjxOtD1kf51JQkoqLfy3wlUfQhkR56e7e9Kq2Fax3ZbFKdDgtX26beWRVWMzDgssFBe0FSOZSviJSoYCiM/oBANb/6TzKxMImdjLVCOfRh3RBXzU9Q9UAQHfT36w/Aba5nO0rcpj+m5h/NlXv6mf6I/l8/wLglzNgtOLftLETd3Gzk02V4xCyWodeda6clwUhmiB6fV6Ac8OAFYUd8eFaRtloPX5+oywHBiJ4AIUY/ghLKEEAHuNBCDFmAYcwRC3myzkhQ2Q2AEK9ARASH2DYuwGUxBdhiR8IyP1BSNIQOJkt1+QF5hZrQsGYgnyAU1WpPRcvktwDmi4XVFTFggtS6yIQB1E1s8cSaY0J7dUkzBo0VQXswGGY5xXUVHlUHFjmehWGuu1BgaqK3oIKQQJDKSA9AEeplHRYmS1q7z9ARicnUE9JQ/oCkZZrHcQC0Qhkry9HlTxL59aVkWBM40EaqRTADnpR7iYroG7v5SGFBeyMeG0lROX0WH2wv7G4yk0AHGc9YQyhhCUCIiQiiN+JMnW+ZWyT8dKNCQssJ8/O3V055Ujrm229HgAAAA==') format('woff2'),
+  url('iconfont.woff?t=1584405796268') format('woff'),
+  url('iconfont.ttf?t=1584405796268') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1584405796268#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 32rpx;
+  letter-spacing:20rpx; 
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yuandian:before {
+  content: "\e61e";
+}
+.icon-yuandian .active{
+  text-shadow: 2rpx 2rpx #000;
+}
+
+.icon-huabi::before {
+  content: "\e640";
+}
+
+.icon-huabi .active{
+  font-size: 60rpx;
+}
+
+page{
+  position: fixed;
+}
+.container{
+  background-color: #ccc;
+  position: fixed;
+}
+/* 整个头部，左边是project，右边是diy */
+.head{
+  width: 98%;
+  height: 80rpx;
+  
+  margin: 0rpx 20rpx 0rpx 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project{
+  width: 50%;
+  height: 80rpx;
+  display: flex;
+  
+}
+.title
+{
+  height: 40rpx;
+  
+  border-radius: 20rpx;
+  margin: 20rpx 0rpx 0rpx 0rpx;
+  line-height: 40rpx;
+  text-align: center;
+  color: #ff0000;
+}
+.reload
+{
+  width: 40rpx;
+  height: 40rpx;
+  display: flex;
+  margin: 20rpx 0rpx;
+}
+.reload image{
+  width: 100%;
+  height: 100%;
+}
+
+
+.diy{
+  width: 30%;
+  height: 80rpx;
+  color: #000;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+/* 下面的画布样式 */
+.canvasarea {
+  width: 96%;
+  height: 50%;
+  background-color: gray;
+  border: 2rpx solid #000;
+  margin: 0rpx 15rpx 15rpx 15rpx;
+  overflow: hidden;
+}
+
+.canvasarea .mycanvas
+{
+  width:100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+/* 下面是画布操作部分 */
+.canvas-caozuo{
+  display: flex;
+  flex-direction: row;
+  height: 120rpx;
+  justify-content: space-around;
+}
+
+/* 粗细 */
+.canvas-weight
+{
+  height: 120rpx;
+  width:90%;
+  margin: 0rpx 40rpx;
+  display: flex;
+  flex-direction: row;
+}
+.canvas-weight .title
+{
+  height: 40rpx;
+  width:150rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  border: 2rpx solid #f00;
+  margin: 20rpx 0rpx 0rpx 0rpx;
+  line-height: 40rpx;
+  text-align: center;
+  color: #ff0000;
+
+}
+
+/* 颜色 */
+.canvas-color
+{
+  height: 120rpx;
+  width:90%;
+  margin: 0rpx 40rpx;
+  display: flex;
+  flex-direction: row;
+  
+}
+.canvas-color .title
+{
+  height: 40rpx;
+  width:20%;
+  background-color: #fff;
+  border-radius: 20rpx;
+  border: 2rpx solid #f00;
+  margin: 20rpx 0rpx 0rpx 0rpx;
+  line-height: 40rpx;
+  text-align: center;
+  color: #ff0000;
+
+}
+
+.right_demo
+{
+  width: 80%;
+  height: 40rpx;
+  margin: 10rpx 30rpx;
+  
+}
+
+
+
+
+/* 弹出框 */
+#alert{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+}
+
+/* 提交区域 */
+#alert-main
+{
+  height: 480rpx;
+  margin: 40rpx ;
+  padding: 100rpx 0rpx 0rpx 0rpx;
+  background-color: #fff;
+  border: 2rpx solid #000;
+  border-radius: 30rpx;
+}
+
+#frame2
+{
+  display: flex;
+  justify-content: center;
+  margin: 35rpx 0rpx;
+}
+.label
+{
+  height: 120rpx;
+  width: 25%;
+  margin: 12rpx 0rpx 10rpx 30rpx;
+  font-size: 30rpx;
+  text-align: center;
+  float: left;
+  color: #1296db;
+  font-weight: 600;
+  line-height: 120rpx;
+  box-shadow: 5rpx 5rpx 25rpx #ccc;
+  border-radius: 16rpx;
+}
+
+.text
+{
+  height: 120rpx;
+  width: 65%;
+  margin: 10rpx 20rpx 10rpx 0rpx;
+  font-size: 30rpx;
+  color:green;
+  float: right;
+  box-shadow: 5rpx 5rpx 25rpx #ccc;
+  border: solid 2rpx #1296db; 
+  border-radius: 16rpx;
+  text-align: center;
+}
+
+.btnline
+{
+  height: 120rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+.btn
+{
+  height: 80rpx;
+  width:30%;
+  margin: 20rpx;
+  background-color: #1296db;
+  text-align: center;
+  line-height: 80rpx;
+  color: white;
+  font-size: 40rpx;
+  box-shadow: 5rpx 5rpx 25rpx #ccc;
+  border-radius: 16rpx;
+}
+
+/* 发布区域 */
+.fabu
+{
+  height: 200rpx;
+  width: 100%;
+  /* border: solid 2rpx orange; 搞不清楚的时候就先加框 */
+  display: flex;
+  justify-content: center;
+}
+

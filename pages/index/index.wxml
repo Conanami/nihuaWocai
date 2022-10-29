@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- banner -->
+  <swiper class="swiper" indicator-dots="{{true}}" autoplay="{{true}}">
+    <block wx:for="{{slider}}">
+      <navigator url="{{item.url}}">
+        <swiper-item>
+          <image src="{{webUrl}}/upload/banner/{{item.img}}" style="width:100%;height:100%;"></image>
+        </swiper-item>
+      </navigator>
+    </block>
+  </swiper>
+
+  <!-- 菜单 -->
+  <navigator url="/pages/canvas/start">
+    <view class="button start">开始画图</view>
+  </navigator>
+  <navigator open-type="switchTab" url="/pages/plaza/plaza">
+    <view class="button plaza">热门广场</view>
+  </navigator>
+  <!-- <navigator open-type="switchTab" url="/pages/my/my">
+    <view class="button my">个人中心</view>
+  </navigator> -->
+</view>

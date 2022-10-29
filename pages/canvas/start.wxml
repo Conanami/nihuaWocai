@@ -1,0 +1,75 @@
+
+<!-- 弹出框 -->
+<view id="alert" hidden="{{alerthidden}}" bindtap="hideAlert">
+<!-- qwe方法不存在，主要是用来阻止冒泡事件 -->
+  <view id="alert-main" catchtap="qwe">
+    <form bindsubmit="fabuProject">
+      <view id="timu">
+        <label class="label">题目：</label>
+        <input class="text" type="text" name="name" placeholder="请输入题目，例如：中国" 
+        />
+      </view>
+      <view id="tishi">
+        <label class="label">提示：</label>
+        <input class="text" type="text" name="notice" placeholder="请输入提示，例如：亚洲国家" />
+      </view>
+      <view class="btnline">
+        <button class="btn" form-type="submit">提交</button>
+        <button class="btn" form-type="reset">重置</button>
+      </view>
+
+    </form>
+  </view>
+  <view id="frame2">
+  </view>
+</view>
+<!--  -->
+<view class="container">
+
+  <!--头部题目区-->
+  <view class="head">
+    <view class="project">
+      <view class="title">题目《 {{project.name}} 》</view>
+      <view class="reload" bindtap="reloadProject">
+        <image src="/icon/refresh.png"></image>
+      </view>
+    </view>
+    <view class="diy" bindtap="makeProject">
+      自己出题
+    </view>
+  </view>
+  <!--绘图区域-->
+  <view class="canvasarea">
+    <!-- 画板 -->
+    <block wx:if="{{alerthidden}}">
+      <canvas canvas-id="mycanvas" class="mycanvas" bindtouchstart="canvasStart" bindtouchmove="canvasMove" bindtouchend="canvasEnd">
+      </canvas>
+    </block>
+     <!-- 操作 -->
+  </view>
+  <view class="canvas-caozuo">
+    <view bindtap="rubber">橡皮擦</view>
+    <view bindtap="clearCanvas">重置</view>
+  </view>
+    <!-- 粗细 -->
+  <view class="canvas-weight">
+    <view class="title">粗细:</view>
+    <view class="right_demo">
+      <i wx:for="{{linewidth}}" class="iconfont icon-yuandian"
+        style="font-size:{{item}}rpx; letter-spacing:30rpx; color:{{color[currentColor]}}; {{index==currentLineWidth?'text-shadow: 5rpx 5rpx #888;':''}} " id="{{index}}" bindtap="changeLineWidth"> 
+      </i>
+    </view>
+  </view>
+    <!-- 颜色 -->
+  <view class="canvas-color">
+    <view class="title">颜色</view>
+    <view class="right_demo">
+       <i class="iconfont icon-huabi"
+        wx:for="{{color}}" style="{{index==currentColor?'font-size:50rpx;':''}} color:{{item}};" id="{{index}}" bindtap="changeColor"></i>
+    </view>
+  </view>
+  <!-- 发布提交区域 -->
+  <view class="fabu">
+    <view class="btn" bindtap="fabuWork">发布作品</view>
+  </view>
+</view>

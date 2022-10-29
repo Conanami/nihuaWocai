@@ -1,0 +1,19 @@
+.button {
+  width: 90%;
+  height: 120rpx;
+  text-align: center;
+  line-height: 120rpx;
+  box-shadow: 0rpx 5rpx 10rpx #ccc;
+  margin: 20rpx auto;
+  border-radius: 20rpx;
+  color:#fff;
+  background-color: #1296db;
+  font-size: 40rpx;
+}
+
+.swiper{
+  height: 800rpx;
+}
+
+
+

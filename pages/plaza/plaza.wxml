@@ -1,0 +1,38 @@
+<!--pages/plaza/plaza.wxml-->
+<view class="container">
+  <view class="head">
+    <view bindtap="changemenu" id="0" class="{{currentMenu==0?'active':''}}">{{menu[0]}} <i class="iconfont icon-tuijian"/></view>
+    <view bindtap="changemenu" id="1" class="{{currentMenu==1?'active':''}}">{{menu[1]}} <i class="iconfont icon-remen"/></view>
+    <view bindtap="changemenu" id="2" class="{{currentMenu==2?'active':''}}">{{menu[2]}} <i class="iconfont icon-zuixin"/></view>
+  </view>
+  <!-- 主体内容 -->
+  <view class="main">
+    <block wx:for="{{workData}}">
+      <view class="works">
+        <!-- 跳转作品页面 -->
+        <navigator url="/pages/work/work?id={{item.id}}">
+          <view class="image">
+            <image src="{{webUrl}}/upload/works/{{item.img}}" mode='aspectFill'/>
+          </view>
+        </navigator>
+        <view class="author">
+          <view class="authorImg">
+            <image src="{{item.headImg}}" mode='aspectFill'/>
+          </view>
+          <view class="authorName">
+            {{item.nickName}}
+          </view>
+        </view>
+      </view>
+    </block>
+    <view class="footer">
+      <block wx:if="{{isBottom}}">
+        <view class="more">已到达底部</view>
+      </block>
+      <block wx:else>
+        <view class="more" bindtap="more">加载更多</view>
+      </block>
+    </view>
+  </view>
+  
+</view>

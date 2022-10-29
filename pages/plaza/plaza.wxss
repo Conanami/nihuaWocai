@@ -1,0 +1,130 @@
+/* pages/plaza/plaza.wxss */
+@font-face {
+  font-family: 'iconfont';  /* project id 1694873 */
+  src: url('//at.alicdn.com/t/font_1694873_4a1osvxxasm.eot');
+  src: url('//at.alicdn.com/t/font_1694873_4a1osvxxasm.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1694873_4a1osvxxasm.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1694873_4a1osvxxasm.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1694873_4a1osvxxasm.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1694873_4a1osvxxasm.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family: 'iconfont' !important;
+  font-size: 32rpx;
+  font-style:normal;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing: greyscale;
+}
+
+.icon-remen:before{
+  content: "\e614";
+}
+.icon-zuixin:before{
+  content: "\e71b";
+}
+.icon-tuijian:before{
+  content: "\e670";
+}
+
+.head {
+  width: 100%;
+  height: 100rpx;
+  box-shadow: 0rpx 1rpx 5rpx rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: space-around;
+}
+
+.head view {
+  flex:100%;
+  line-height: 100rpx;
+  height: 100rpx;
+  background: silver;
+  text-align: center;
+  font-size:30rpx;
+}
+
+.head .active {
+  border-bottom: 5px solid skyblue;
+  color:skyblue;
+  background: #fff;
+  box-sizing: border-box;
+  font-size: 35rpx;
+  font-weight: 600;
+}
+
+/* 整体位置调节 */
+.main{
+  width: 100%;
+  
+}
+
+.main .works
+{
+  float:left;
+  width: 45%;
+  height: 425rpx;
+  border: 2rpx solid #000;
+  margin: 15rpx;
+  border-radius: 20rpx;
+}
+
+.main .works .image
+{
+  width: 100%;
+  height: 300rpx;
+  border: 2rpx solid #fff;
+  border-radius: 20rpx;
+}
+
+.main .works .image image
+{
+  width: 100%;
+  height: 100%;
+}
+.main .author
+{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+}
+
+.main .author .authorImg
+{
+  width: 120rpx;
+  height: 120rpx;
+  
+}
+
+.main .author .authorImg image
+{
+  width: 100%;
+  height: 100%;
+  border: 2rpx solid #000;
+  border-radius: 50%;
+}
+
+.main .author .authorName
+{
+  width:50%;
+  height:100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.main .footer
+{
+  clear:both;
+  height: 100rpx;
+  width: 100%;
+}
+
+.main .footer .more 
+{
+  width:300rpx;
+  height: 80rpx;
+  border: 2rpx solid #000;
+  margin: 10rpx auto;
+  border-radius: 20rpx;
+  line-height: 80rpx;
+  text-align: center;
+}

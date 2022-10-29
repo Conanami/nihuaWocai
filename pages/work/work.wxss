@@ -1,0 +1,116 @@
+/* pages/work/work.wxss */
+.container{
+  min-height: 100vh;
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+
+/* 作者区域 */
+.author{
+  height: 150rpx;
+  width: 100%;
+  display: flex;
+  margin: 10rpx;
+}
+
+.author .authorImg
+{
+  height: 150rpx;
+  width: 150rpx;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.author .authorImg .image
+{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.author .authorInfo
+{
+  height:150rpx;
+  width: 70%;
+  background: #fff;
+  border: 2rpx solid #000;
+  font-size: 32rpx;
+  border-radius: 30rpx;
+}
+
+.author .authorInfo .authorName{
+  height: 75rpx;
+  width: 100%;
+  line-height: 75rpx;
+  text-align: center;
+}
+
+.author .authorInfo .tip{
+  height: 75rpx;
+  width: 100%;
+  line-height: 75rpx;
+  text-align: center;
+} 
+
+/* 作品区域 */
+.works{
+  height: 600rpx;
+  width: 100%;
+  margin: 20rpx 0rpx;
+}
+
+.works image{
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+
+/* 答题区域 */
+.answer{
+  height: 80rpx;
+  width: 100%;
+  margin: 20rpx 0rpx;
+}
+
+.answer .rightanswer{
+  height: 80rpx;
+  width: 100%;
+  line-height: 80rpx;
+  text-align: center;
+
+}
+
+.answer .answer_area{
+  height: 80rpx;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.answer_area .input{
+  width: 500rpx;
+  height: 80rpx;
+  margin: 0rpx 0rpx 0rpx 30rpx;
+  border: 2rpx solid #000;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+}
+
+
+.answer_area .btn{
+  width: 20%;
+  float: right;
+  line-height: 80rpx;
+  height: 80rpx;
+  background-color: orange;
+  color: #fff;
+}
+/* 答题列表区域 */
+.list {
+  width: 100%;
+  margin: 20rpx 0rpx;
+}
+
+
+
+

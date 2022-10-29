@@ -1,0 +1,39 @@
+{
+  "pages": [   
+    
+    "pages/index/index",
+    "pages/plaza/plaza",
+    "pages/work/work",
+    "pages/canvas/start", 
+    "pages/share/share",
+    "pages/shouquan/shouquan",
+    "pages/my/my",
+    "pages/store/store"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "涂鸦大王",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "icon/shouye2.png",
+        "iconPath": "icon/shouye.png"
+      },
+      {
+        "pagePath": "pages/plaza/plaza",
+        "selectedIconPath": "icon/banshidating2.png",
+        "iconPath": "icon/banshidating.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
